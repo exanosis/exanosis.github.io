@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Exanosis621 Official Website -|- Stream Staff</title>
     <style type="text/css">
-    .crazycat {
+    .crazycat, .crazycat .desc{
+      font-variant: small-caps;
     width: 600px;
     overflow: hidden;
 }
@@ -14,7 +15,8 @@ hr {
   border: none;
   color:#dd4818;
 }
-.izzyb {
+.izzyb, .izzyb .desc{
+  font-variant: small-caps;
   width: 600px;
   overflow: hidden;
 }
@@ -26,13 +28,30 @@ hr {
     margin-right: 15px;
     float: left;
 }
-.riceranger {
+.riceranger, .riceranger .desc{
+  font-variant: small-caps;
   width: 600px;
   overflow: hidden;
 }
 .riceranger img {
   margin-left: 15px;
   float: right;
+}
+.lie{
+  visibility: hidden;
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%
+  margin-left:-60px;
+}
+.lies:hover .lie{
+  visibility: visible;
 }
 .floofs{
   visibility: hidden;
@@ -45,7 +64,7 @@ hr {
 .floof:hover .floofs{
   visibility: visible;
 }
-.desc, .footer,{
+.footer,{
   font-variant: small-caps;
 }
     ul {
@@ -168,7 +187,7 @@ li.dropdown {
       <div class="riceranger">
         <img src="rice.jpg" alt="riceranger_discord" width="100" height="100">
         <h3>TheRiceRanger</h3>
-        <span class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac pharetra augue. Nulla fringilla a purus et aliquam. Pellentesque vestibulum porttitor dolor, nec aliquam justo condimentum vel. Curabitur interdum elit in nunc porta suscipit. Aliquam volutpat est id blandit egestas. Etiam quis felis eget est cursus porta. Nunc finibus urna eget erat ornare varius. Donec eget finibus tortor, ut pharetra odio. Suspendisse aliquam turpis eget ex blandit hendrerit. Mauris luctus justo eu nisl consectetur scelerisque. Etiam convallis imperdiet felis sit amet consectetur. Donec at ante finibus, pretium nibh et, pretium urna. Cras non pharetra diam. Praesent id erat in tortor. </span>
+        <span class="desc">Rice has been a moderator in Exanosis' chat longer than anyone can remember, and is often found annihilating on Overwatch. He is one of Exanosis' best friends and really lifts the spirit of chat by <s class="lies">arguing with Salty and getting them killed as fast as possible in Town of Salem<b class="lie">This is a LIE, and SLANDER. TheRiceRanger is the BEST mod EVAR</b></s> being the <i>Best</i> Mod because he enjoys fucking shit up. </span>
         <span class="links"><a href="http://www.twitch.tv/TheRiceRanger"><img src="twitch.png" alt="twitch" width="25" height="25"></a></span>
       </div>
       <hr />
@@ -181,12 +200,33 @@ li.dropdown {
         </span>
         <span class="links"><a href="http://www.twitch.tv/izzybeotch"><img src="twitch.png" alt="twitch" width="25" height="25"></a></span>
       </div>
+      <hr />
+
+      <div class="exabot">
+        <img src="bot" alt="exa_bot" width="100" height="100">
+        <h3>Exanosis621bot</h3>
+        <span class="desc">
+          <a href="#" onclick="myFunction()">Test</a>
+        </span>
+        <span class="links"></span>
+      </div>
+      <a name="bot"></a>
       </section>
       <footer>
        <p class="footer">Created with care by <a href="http://twitter.com/LewdCode">Ha</a><a href="http://www.youtube.com/codingcoal">xi</a><a href="http://www.twitch.tv/haxial">al</a></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script>
+    function myFunction() {
+    var x;
+    if (confirm("WARNING: This donation link is to support the Website, not Exanosis. \nPress OK to confirm.") == true) {
+        x = "http://paypal.me/intesvensk";
+    } else {
+        x = "#";
+    }
+    window.location.href = x;
+}
+</script>
   </body>
 </html>
