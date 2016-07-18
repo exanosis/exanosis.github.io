@@ -4,6 +4,62 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Exanosis621 Official Website</title>
+    <style type="text/css">
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffcc00;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+  font-weight: bold;
+    display: inline-block;
+    color: #4276b6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4276b6;
+    color:#ffcc00;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #4276b6; color: #ffcc00;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.active {
+    background-color: #ffcc00;
+}
+</style>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -22,6 +78,18 @@
       </header>
 
       <div id="banner">
+       <div id="menu-bar"><ul>
+  <li><a class="active" href="#">Home</a></li>
+  <li class="dropdown">
+    <a href="#">COMING SOON</a>
+  </li>
+  <li class="dropdown">
+    <a href="#">Stream Staff</a>
+    <li><a href="#">Game Library</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+</div>
+
         <!-- 
         Insert Menu Here
         -->
