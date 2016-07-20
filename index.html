@@ -107,11 +107,23 @@ li.dropdown {
         Main Content - About Exa, mods etc
       -->
       </section>
-      <footer>
-       
+     <footer>
+       <p class="footer">Created with care by <a href="http://twitter.com/LewdCode">Ha</a><a href="http://www.youtube.com/codingcoal">xi</a><a href="http://www.twitch.tv/haxial">al</a><br>
+       This site is run as NOT FOR PROFIT. <a href="#" onclick="myFunction()">Donations</a> 100% go back into improving this site and keeping it online.
+       </p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script>
+    function myFunction() {
+    var x;
+    if (confirm("WARNING: This donation link is to support the Website, not Exanosis. \n\n\nTo continue to SITE donation, click \"OK\". To donate to Exanosis, click \"Cancel\" \n\n TO CLOSE THIS POPUP, PRESS ESCAPE") == true) {
+        x = "http://paypal.me/intesvensk";
+    } else {
+        x = "https://www.twitchalerts.com/donate/exanosis621";
+    }
+    window.location.href = x;
+}
+</script>
   </body>
 </html>
