@@ -18,6 +18,15 @@ hr {
   border: none;
   color:#dd4818;
 }
+.exabot, .exabot .desc{
+  font-variant: small-caps;
+  width:600px;
+  overflow: hidden;
+}
+.exabot img {
+  margin-right: 15px;
+  float: right;
+}
 .izzyb, .izzyb .desc{
   font-variant: small-caps;
   width: 600px;
@@ -63,6 +72,22 @@ hr {
 .lies:hover .lie{
   visibility: visible;
 }
+.rules{
+  visibility: hidden;
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%
+  margin-left:-60px;
+}
+.atr:hover .rules{
+  visibility: visible;
+}
 .floofs{
   visibility: hidden;
   position: absolute;
@@ -74,7 +99,7 @@ hr {
 .floof:hover .floofs{
   visibility: visible;
 }
-.footer,{
+.footer{
   font-variant: small-caps;
 }
     ul {
@@ -91,7 +116,28 @@ p a,p {
 li {
     float: left;
 }
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ffcc00;
+    color: #4276b6;
+}
 li a, .dropbtn {
   font-weight: bold;
     display: inline-block;
@@ -213,10 +259,37 @@ li.dropdown {
       <hr />
 
       <div class="exabot">
-        <img src="bot" alt="exa_bot" width="100" height="100">
+        <img src="bot.jpg" alt="exa_bot" width="100" height="100">
         <h3>Exanosis621bot</h3>
         <span class="desc">
-          Bot commands will appear here. Also needing a photo of the bot or a picture to represent it or something
+          The following commands can be used with exanosis621bot
+          <table id="customers">
+            <tr>
+    <th>Command</th>
+    <th>Usage</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>gil</td>
+    <td>!gil</td>
+    <td>Check your GIL balance</td>
+  </tr>
+  <tr>
+    <td>top3</td>
+    <td>!top3</td>
+    <td>Check the top 3 GIL Hunters</td>
+  </tr>
+  <tr>
+    <td>toppoints</td>
+    <td>!toppoints</td>
+    <td>Check the top 10 GIL Hunters</td>
+  </tr>
+  <tr>
+    <td>attackrules</td>
+    <td>!attackrules</td>
+    <td>Display the <a href="#bot" onclick="atrule()">attack rules</a></td>
+  </tr>
+  </table>
         </span>
         <span class="links"></span>
       </div>
@@ -238,6 +311,9 @@ li.dropdown {
         x = "https://www.twitchalerts.com/donate/exanosis621";
     }
     window.location.href = x;
+}
+function atrule(){
+  alert("Attack a target using the !attack command. Attackers can win gil from rolling a higher attack than the enemies defense, but can also lose and give gil if they are unlucky and roll lower than the defense of the target! defenders can't lose gil, only attackers.");
 }
 </script>
   </body>
